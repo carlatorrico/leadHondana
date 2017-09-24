@@ -55,11 +55,16 @@ if ( ! defined('ABSPATH')) exit; ?>
                                     <hr>
                                 </div>
 
-                                <form action="send.php" method="POST">
+                                <form action="<?php echo HOME_URI;?>/lead" method="POST">
                                     <div class="md-form">
                                         <i class="fa fa-user prefix grey-text"></i>
                                         <input type="text" id="name" name="name" class="form-control" required>
                                         <label for="name">Nome</label>
+                                    </div>
+                                    <div class="md-form">
+                                        <i class="fa fa-user prefix grey-text"></i>
+                                        <input type="text" id="sobrenome" name="sobrenome" class="form-control" required>
+                                        <label for="sobrenome">Sobrenome</label>
                                     </div>
                                     <div class="md-form">
                                         <i class="fa fa-envelope prefix grey-text"></i>
@@ -68,7 +73,7 @@ if ( ! defined('ABSPATH')) exit; ?>
                                     </div>
 
                                     <div class="text-center">
-                                        <button class="btn btn-orange mb-3">Cadastrar</button>
+                                        <button class="btn btn-info mb-3">Cadastrar</button>
                                     </div>
                                 </form>
                             </div>
@@ -78,18 +83,6 @@ if ( ! defined('ABSPATH')) exit; ?>
             </div>
         </div>
     </section>
-    <div class="container text-center mb-6 wow fadeInLeft" data-wow-delay="0.3s">
-        <div class="row">
-            <div class="col-md-4 col-sm-4 col-xs-12">
-                <div class="top-left">
-                    <a href="https://www.facebook.com/" target="_blank"><img src="assets/img/fb64bco.png"></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/ins64bco.png"></a>
-                    <a href="https://www.linkedin.com/" target="_blank"><img src="assets/img/in64bco.png"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
 </header>
 
 <section id="main-content">

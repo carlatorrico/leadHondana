@@ -11,6 +11,8 @@ class HomeController extends MainController
     public function index() {
         $this->title = 'RH do Futuro';
 
+        $modelo = $this->load_model('blog/blog-model');
+
         // /views/includes/header.php
         require ABSPATH . '/views/includes/header.php';
 

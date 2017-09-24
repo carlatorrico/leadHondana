@@ -6,7 +6,9 @@
  * Time: 13:19
  */
 
-if ( ! defined('ABSPATH')) exit; ?>
+if ( ! defined('ABSPATH')) exit;
+$lista = $modelo->get_blog_list();
+?>
 
 <div class="container text-center">
     <div class="row mt-5">
@@ -16,95 +18,23 @@ if ( ! defined('ABSPATH')) exit; ?>
         </div>
         <hr class="c-hr">
 
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="card">
-                <div class="card-block">
-                    <img class="card-img-top mb-3" src="assets/img/post1.png" alt="Card image cap">
-                    <h6 class="deep-orange-text mb-3 mt-3">
-                        <i class="fa fa-graduation-cap"></i>
-                        <strong> Categoria</strong>
-                    </h6>
-                    <h3 class="card-title">Special title treatment</h3>
-                    <p>Por <a><strong>Simone </strong></a>, 10/07/2016</p>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-orange mb-3">Ver mais</a>
+        <?php foreach ($lista as $fetch_blog): ?>
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                <div class="card">
+                    <div class="card-block">
+                        <img class="card-img-top mb-3" src="<?php echo $fetch_blog['image'] ?>" alt="<?php echo $fetch_blog['title'] ?>">
+<!--                        <h6 class="deep-orange-text mb-3 mt-3">-->
+<!--                            <i class="fa fa-graduation-cap"></i>-->
+<!--                            <strong>--><?php //echo $fetch_blog['category'] ?><!--</strong>-->
+<!--                        </h6>-->
+                        <h3 class="card-title my-2"><?php echo $fetch_blog['title'] ?></h3>
+<!--                        <p>Por <b><strong>--><?php //echo $fetch_blog['by'] ?><!-- </strong></b>, --><?php //echo $fetch_blog['created_at'] ?><!--10/07/2016</p>-->
+                        <p class="card-text mx-3"><?php echo $fetch_blog['summary'] ?></p>
+                        <a href="<?php echo HOME_URI;?>/blog/detail/<?php echo $fetch_blog['uri'] ?>" class="btn btn-info mb-3">Ver mais</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="card">
-                <div class="card-block">
-                    <img class="card-img-top mb-3" src="assets/img/post2.png" alt="Card image cap">
-                    <h6 class="deep-orange-text mb-3 mt-3">
-                        <i class="fa fa-graduation-cap"></i>
-                        <strong> Categoria</strong>
-                    </h6>
-                    <h3 class="card-title">Special title treatment</h3>
-                    <p>Por <a><strong>Simone </strong></a>, 10/07/2016</p>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-orange mb-3">Ver mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="card">
-                <div class="card-block">
-                    <img class="card-img-top mb-3" src="assets/img/post3.png" alt="Card image cap">
-                    <h6 class="deep-orange-text mb-3 mt-3">
-                        <i class="fa fa-graduation-cap"></i>
-                        <strong> Categoria</strong>
-                    </h6>
-                    <h3 class="card-title">Special title treatment</h3>
-                    <p>Por <a><strong>Simone </strong></a>, 10/07/2016</p>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-orange mb-3">Ver mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="card">
-                <div class="card-block">
-                    <img class="card-img-top mb-3" src="assets/img/post2.png" alt="Card image cap">
-                    <h6 class="deep-orange-text mb-3 mt-3">
-                        <i class="fa fa-graduation-cap"></i>
-                        <strong> Categoria</strong>
-                    </h6>
-                    <h3 class="card-title">Special title treatment</h3>
-                    <p>Por <a><strong>Simone </strong></a>, 10/07/2016</p>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-orange mb-3">Ver mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="card">
-                <div class="card-block">
-                    <img class="card-img-top mb-3" src="assets/img/post3.png" alt="Card image cap">
-                    <h6 class="deep-orange-text mb-3 mt-3">
-                        <i class="fa fa-graduation-cap"></i>
-                        <strong> Categoria</strong>
-                    </h6>
-                    <h3 class="card-title">Special title treatment</h3>
-                    <p>Por <a><strong>Simone </strong></a>, 10/07/2016</p>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-orange mb-3">Ver mais</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-            <div class="card">
-                <div class="card-block">
-                    <img class="card-img-top mb-3" src="assets/img/post1.png" alt="Card image cap">
-                    <h6 class="deep-orange-text mb-3 mt-3">
-                        <i class="fa fa-graduation-cap"></i>
-                        <strong> Categoria</strong>
-                    </h6>
-                    <h3 class="card-title">Special title treatment</h3>
-                    <p>Por <a><strong>Simone </strong></a>, 10/07/2016</p>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-orange mb-3">Ver mais</a>
-                </div>
-            </div>
-        </div>
+        <?php endforeach; ?>
+
     </div>
 </div>
