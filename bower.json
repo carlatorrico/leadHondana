@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "jquery-validation": "jquery.validate#^1.13.0"
+    "jquery-validation": "jquery.validate#^1.13.0",
+    "MDBootstrap": "^4.4.1"
   }
 }
