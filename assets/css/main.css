@@ -31,3 +31,8 @@ h6 {
         height: 450px;
     }
 }
+
+.top-left a{
+    float: left;
+    margin: 1px;
+}
