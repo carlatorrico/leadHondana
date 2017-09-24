@@ -1,0 +1,22 @@
+{
+  "name": "leadHondana",
+  "authors": [
+    "carlatorrico"
+  ],
+  "description": "leadHondana",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "fappes.carlatorrico.com.br",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery-validation": "jquery.validate#^1.13.0"
+  }
+}
