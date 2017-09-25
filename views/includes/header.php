@@ -32,7 +32,7 @@ if ( ! defined('ABSPATH')) exit; ?>
 </head>
 <body>
 <!---->
-<!--<!-- Global Site Tag (gtag.js) - Google Analytics -->-->
+<!--<!-- Global Site Tag (gtag.js) - Google Analytics -->
 <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106970041-1"></script>-->
 <!--<script>-->
 <!--  window.dataLayer = window.dataLayer || [];-->
