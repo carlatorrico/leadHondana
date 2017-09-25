@@ -37,13 +37,12 @@ if ( ! defined('ABSPATH')) exit; ?>
 </div>
 </section>
 
-<div class="line"></div>
-<hr class="c-hr">
-<footer id="footer">
+
+<footer id="footer" class="elegant-color mt-5">
     <div class="container">
         <div class="row py-3 text-center">
             <div class="col-md-12 col-xs-12">
-                <p class="info">2017 &copy; RH do Futuro.</p>
+                <p class="info text-white">2017 &copy; RH do Futuro.</p>
             </div>
         </div>
     </div>

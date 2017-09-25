@@ -17,6 +17,8 @@ class LeadController extends MainController
         $modelo = $this->load_model('lead/lead-model');
         $modelo->insert();
 
+        $modelBlog = $this->load_model('blog/blog-model');
+
         // /views/includes/header.php
         require ABSPATH . '/views/includes/header.php';
 
