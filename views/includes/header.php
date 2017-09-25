@@ -31,6 +31,15 @@ if ( ! defined('ABSPATH')) exit; ?>
     <title><?php echo $this->title; ?></title>
 </head>
 <body>
+<!---->
+<!--<!-- Global Site Tag (gtag.js) - Google Analytics -->-->
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106970041-1"></script>-->
+<!--<script>-->
+<!--  window.dataLayer = window.dataLayer || [];-->
+<!--  function gtag(){dataLayer.push(arguments)};-->
+<!--  gtag('js', new Date());-->
+<!--  gtag('config', 'UA-106970041-1');-->
+<!--</script>-->
 
 <header>
     <section class="view hm-stylish-strong">
@@ -38,18 +47,23 @@ if ( ! defined('ABSPATH')) exit; ?>
             <div class="d-flex align-items-center">
                 <div class="row flex-center pt-2 mt-3">
                     <div class="col-md-6 text-center text-md-left mb-5">
-
-
-                        <div class="row text-center">
-                            <a href="<?php echo HOME_URI;?>">
-                                <img class="flex-center wow fadeInLeft" data-wow-delay="0.3s" src="<?php echo HOME_URI;?>/assets/img/logo.jpeg">
-                            </a>
-                        </div>
-
-                        <div class="row white-text">
-                            <h6 class="wow fadeInLeft mt-4" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam
-                                sapiente, fugiat! Commodi sequi non animi ea dolor molestiae, quisquam iste.</h6>
+                        <div class="container">
+                            <div class="row justify-content-md-center">
+                                <div class="col-2 col-lg-2"></div>
+                                <div class="col-8 col-md-auto">
+                                    <a href="<?php echo HOME_URI;?>">
+                                        <img class="flex-center wow fadeInLeft" data-wow-delay="0.3s" src="<?php echo HOME_URI;?>/assets/img/rhdofuturo.png">
+                                    </a>
+                                </div>
+                                <div class="col-2 col-lg-2"></div>
+                            </div>
+                            <div class="row white-text">
+                                <div class="col-12">
+                                    <h6 class="wow fadeInLeft mt-4" data-wow-delay="0.3s">
+                                        A única constante é a mudança. O RH do Futuro traz as principais novidades na gestão de recursos humanos. Se inscreva no nosso blog e faça parte da maior comunidade de inovação e desenvolvimento de pessoas do Brasil.
+                                    </h6>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -91,4 +105,4 @@ if ( ! defined('ABSPATH')) exit; ?>
     </section>
 </header>
 
-<section id="main-content">
+<section id="main-content mt-5">

@@ -179,6 +179,31 @@ class DB
         }
     }
 
+    public function findByEmail($table, $email) {
+
+        // Cria a declaração para enviar ao PDO
+        $stmt = "SELECT * FROM `$table` WHERE `email` = ?";
+
+        // Prepara e executa
+        $query      = $this->pdo->prepare( $stmt );
+        $check_exec = $query->execute(array($email));
+
+        // Verifica se a consulta aconteceu
+        if ( $check_exec ) {
+            // Retorna a consulta
+            return $query;
+
+        } else {
+
+            // Configura o erro
+            $error       = $query->errorInfo();
+            $this->error = $error[2];
+
+            // Retorna falso
+            return false;
+        }
+    }
+
     /**
      * findAll - Consulta PDO
      * @param $table
