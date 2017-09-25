@@ -36,12 +36,18 @@ if ( ! defined('ABSPATH')) exit; ?>
     <section class="view hm-stylish-strong">
         <div class="container flex-center">
             <div class="d-flex align-items-center">
-                <div class="row flex-center pt-5 mt-3">
+                <div class="row flex-center pt-2 mt-3">
                     <div class="col-md-6 text-center text-md-left mb-5">
-                        <div class="white-text">
-                            <h1 class="display-4 wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum</h1>
-                            <hr class="hr-light wow fadeInLeft" data-wow-delay="0.3s">
-                            <h6 class="wow fadeInLeft" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur
+
+
+                        <div class="row text-center">
+                            <a href="<?php echo HOME_URI;?>">
+                                <img class="flex-center wow fadeInLeft" data-wow-delay="0.3s" src="<?php echo HOME_URI;?>/assets/img/logo.jpeg">
+                            </a>
+                        </div>
+
+                        <div class="row white-text">
+                            <h6 class="wow fadeInLeft mt-4" data-wow-delay="0.3s">Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit. Rem repellendus quasi fuga nesciunt dolorum nulla magnam veniam
                                 sapiente, fugiat! Commodi sequi non animi ea dolor molestiae, quisquam iste.</h6>
                         </div>

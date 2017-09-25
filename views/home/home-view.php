@@ -12,14 +12,14 @@ $lista = $modelo->get_blog_list();
 
 <div class="container text-center">
     <div class="row mt-5">
-        <div class="col-12">
+        <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
             <h2 class="title">Últimas Postagens</h2>
             <p class="mt-3">Veja nossas últimas postagens</p>
         </div>
         <hr class="c-hr">
 
         <?php foreach ($lista as $fetch_blog): ?>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="card">
                     <div class="card-block">
                         <img class="card-img-top mb-3" src="<?php echo $fetch_blog['image'] ?>" alt="<?php echo $fetch_blog['title'] ?>">
