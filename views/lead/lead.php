@@ -28,8 +28,8 @@ $blogs = $modelBlog->get_blog_list();
                     <div class="col-lg-12 mb-4 ">
                         <div class="card">
                             <div class="card-block">
-                                <img src="https://mdbootstrap.com/img/Photos/Others/forest-sm.jpg" class="card-img-top mb-3" >
-                                <h3 class="card-title my-2 flex-center"><?php echo $linha['title'] ?></h3>
+                                <img src="<?php echo $linha['image']; ?>" class="card-img-top mb-3" >
+                                <h3 class="card-title my-2 mx-3"><?php echo $linha['title'] ?></h3>
                                 <p class="card-text mx-3"><?php echo $linha['summary'] ?></p>
                                 <div class="flex-center">
                                     <a href="<?php echo HOME_URI;?>/blog/detail/<?php echo $linha['uri'] ?>" class="btn btn-info mb-3">Ver mais</a>
@@ -39,6 +39,7 @@ $blogs = $modelBlog->get_blog_list();
                     </div>
                 <?php endforeach; ?>
             </div>
+
         </div>
     </section>
 </div>

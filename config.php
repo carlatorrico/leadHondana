@@ -28,7 +28,7 @@ define( 'DB_PASSWORD', '' );
 define( 'DB_CHARSET', 'utf8' );
 
 // Se você estiver desenvolvendo, modifique o valor para true
-define( 'DEBUG', true );
+define( 'DEBUG', false );
 
 // Carrega o loader, que vai carregar a aplicação inteira
 require_once ABSPATH . '/loader.php';

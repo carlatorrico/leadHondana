@@ -39,18 +39,6 @@ if ( ! defined('ABSPATH')) exit; ?>
     <link href="<?php echo HOME_URI;?>/assets/css/main.css" rel="stylesheet">
 
     <title><?php echo $this->title; ?></title>
-
-    <!-- Smartsupp Live Chat script -->
-    <script type="text/javascript">
-        var _smartsupp = _smartsupp || {};
-        _smartsupp.key = 'c6df8b6fdd1cd13107f3ff4adadf64fc4f075652';
-        window.smartsupp||(function(d) {
-            var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-            s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-            c.type='text/javascript';c.charset='utf-8';c.async=true;
-            c.src='//www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-        })(document);
-    </script>
 </head>
 
 <body>
@@ -68,7 +56,7 @@ if ( ! defined('ABSPATH')) exit; ?>
         <div class="container flex-center">
             <div class="d-flex align-items-center">
                 <div class="row flex-center pt-2 mt-3">
-                    <div class="col-md-6 text-center text-md-left mb-5">
+                    <div class="col-md-7 text-center text-md-left mb-5">
                         <div class="container">
                             <div class="row justify-content-md-center">
                                 <div class="col-2 col-lg-2"></div>
@@ -89,10 +77,10 @@ if ( ! defined('ABSPATH')) exit; ?>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-xl-5 offset-xl-1">
-                        <div class="card elegant-color wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="col-md-5 col-xl-5 offset-xl-1">
+                        <div class="card grey lighten-4 wow fadeInRight" data-wow-delay="0.3s">
 
-                            <div class="card-body z-depth-2 text-white">
+                            <div class="card-body z-depth-2">
                                 <div class="text-center">
                                     <h4>Entre para nossa lista e receba conteúdos exclusivos!</h4>
                                     <hr>
@@ -101,18 +89,18 @@ if ( ! defined('ABSPATH')) exit; ?>
                                 <form action="<?php echo HOME_URI;?>/lead" method="POST">
                                     <div class="md-form">
                                         <i class="fa fa-user prefix grey-text"></i>
-                                        <input type="text" id="name" name="name" class="form-control" required>
-                                        <label class="text-white" for="name">Nome</label>
+                                        <input type="text" id="name" name="name" class="form-control" lettersonly required>
+                                        <label for="name">Nome</label>
                                     </div>
                                     <div class="md-form">
                                         <i class="fa fa-user prefix grey-text"></i>
                                         <input type="text" id="sobrenome" name="sobrenome" class="form-control" required>
-                                        <label class="text-white" for="sobrenome">Sobrenome</label>
+                                        <label for="sobrenome">Sobrenome</label>
                                     </div>
                                     <div class="md-form">
                                         <i class="fa fa-envelope prefix grey-text"></i>
                                         <input type="email" id="email" name="email" class="form-control" required>
-                                        <label class="text-white" for="email">E-mail</label>
+                                        <label for="email">E-mail</label>
                                     </div>
 
                                     <div class="text-center">
