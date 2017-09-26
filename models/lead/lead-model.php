@@ -84,11 +84,12 @@ class LeadModel
 
             if(empty($email)) {
                 // Executa a consulta
+                $ip = $this->getIP();
                 $query = $this->db->save('lead', array(
                     'nome'      => chk_array($this->form_data, 'name'),
                     'sobrenome' => chk_array($this->form_data, 'sobrenome'),
                     'email'     => chk_array($this->form_data, 'email'),
-                    'ipv4'      => $this->getIP()
+                    'ipv4'      => $ip
                 ));
 
                 // Verifica se a consulta está OK e configura a mensagem
@@ -114,6 +115,13 @@ class LeadModel
         else if (getenv("HTTP_CLIENT_IP")) $ip = getenv("HTTP_CLIENT_IP");
         else if(getenv("REMOTE_ADDR")) $ip = getenv("REMOTE_ADDR");
         else $ip = "UNKNOWN";
-        return $ip;
+
+        if(strlen($ip) > 15){
+            $ipv4 = hexdec(substr($ip, 0, 2)). "." . hexdec(substr($ip, 2, 2)). "." . hexdec(substr($ip, 5, 2)). "." . hexdec(substr($ip, 7, 2));
+
+        } else {
+            $ipv4 = $ip;
+        }
+        return $ipv4;
     }
 }
