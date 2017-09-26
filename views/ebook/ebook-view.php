@@ -40,7 +40,7 @@ $blogs = $modelo->get_blog_list();
                     </div>
 
                     <div class="text-center">
-                        <button class="btn btn-info mb-3">Cadastrar</button>
+                        <button class="btn btn-info mb-3">Baixar Agora</button>
                     </div>
                 </form>
             </div>
