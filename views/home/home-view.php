@@ -13,13 +13,13 @@ $lista = $modelo->get_blog_list();
 <div class="container text-center">
     <div class="row mt-5">
 
-<!--        <div class="col-12 mb-4 wow fadeInUp" data-wow-delay="0.3s">-->
-<!--            <h4 class="text-left">Disponibilizamos um e-book com conteúdo exclusivo para você-->
-<!--                <a href="--><?php //echo HOME_URI;?><!--/ebook">-->
-<!--                    <button type="button" class="btn btn-outline-brown waves-effect">Eu quero!</button>-->
-<!--                </a>-->
-<!--            </h4>-->
-<!--        </div>-->
+        <div class="col-12 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+            <h4 class="text-left">Disponibilizamos um e-book com conteúdo exclusivo para você
+                <a href="<?php echo HOME_URI;?>/ebook">
+                    <button type="button" class="btn btn-outline-brown waves-effect">Eu quero!</button>
+                </a>
+            </h4>
+        </div>
         <div class="col-12 wow fadeInUp" data-wow-delay="0.3s">
             <h2 class="title">Últimas Postagens</h2>
             <p class="mt-3">Veja nossas últimas postagens</p>
