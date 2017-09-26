@@ -9,7 +9,7 @@
 if ( ! defined('ABSPATH')) exit; ?>
 
     <hr class="c-hr">
-    <div class="container wow fadeInUp" data-wow-delay="0.3s">
+    <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-12 text-center my-4">
                 <h2 class="title">Encontre-nos nas redes sociais</h2>

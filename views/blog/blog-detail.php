@@ -14,7 +14,7 @@ $blogs = $modelo->get_blog_list();
 ?>
 
 <div class="container text-center">
-    <section class="section extra-margins pb-3 text-center text-lg-left wow fadeInUp" data-wow-delay="0.3s">
+    <section class="section extra-margins pb-3 text-center text-lg-left">
 
         <div class="row mt-5">
             <?php if (!empty($lista)): ?>
