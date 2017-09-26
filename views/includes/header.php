@@ -77,7 +77,7 @@ if ( ! defined('ABSPATH')) exit; ?>
                         </div>
                     </div>
 
-                    <div class="col-md-5 col-xl-5 offset-xl-1">
+                    <div class="col-md-5 col-xl-5 offset-xl-1 mb-2">
                         <div class="card grey lighten-4 wow fadeInRight" data-wow-delay="0.3s">
 
                             <div class="card-body z-depth-2">
