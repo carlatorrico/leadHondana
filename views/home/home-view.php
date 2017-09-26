@@ -27,7 +27,7 @@ $lista = $modelo->get_blog_list();
 <!--                            <i class="fa fa-graduation-cap"></i>-->
 <!--                            <strong>--><?php //echo $fetch_blog['category'] ?><!--</strong>-->
 <!--                        </h6>-->
-                        <h3 class="card-title my-2"><?php echo $fetch_blog['title'] ?></h3>
+                        <h3 class="card-title my-2 mx-2"><?php echo $fetch_blog['title'] ?></h3>
 <!--                        <p>Por <b><strong>--><?php //echo $fetch_blog['by'] ?><!-- </strong></b>, --><?php //echo $fetch_blog['created_at'] ?><!--10/07/2016</p>-->
                         <p class="card-text mx-3"><?php echo $fetch_blog['summary'] ?></p>
                         <a href="<?php echo HOME_URI;?>/blog/detail/<?php echo $fetch_blog['uri'] ?>" class="btn btn-info mb-3">Ver mais</a>

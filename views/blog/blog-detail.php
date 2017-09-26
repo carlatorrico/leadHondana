@@ -21,7 +21,7 @@ $blogs = $modelo->get_blog_list();
                         <div class="view overlay hm-white-slight z-depth-1-half mb-3">
                             <img src="<?php echo $fetch_blog['image']; ?>" class="img-fluid">
                         </div>
-                        <h4 class="mb-3"><strong><?php echo $fetch_blog['title'] ?></strong></h4>
+<!--                        <h4 class="mb-3"><strong>--><?php //echo $fetch_blog['title'] ?><!--</strong></h4>-->
                         <?php echo $fetch_blog['content'] ?>
                     </div>
                 <?php endforeach; ?>
