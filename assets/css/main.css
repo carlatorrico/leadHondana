@@ -1,8 +1,21 @@
 header {
     width: 100%;
     height: 100%;
-    background: url(../../assets/img/head.png) center center repeat;
     min-height: 500px;
+}
+
+@media only screen and (max-width: 360px) {
+    header {
+        width: auto;
+        float: none;
+        background: url(../../assets/img/treinamentos-via-mobile-alcance-rapido-resultados-em-vendas.jpeg) center center no-repeat;
+    }
+}
+
+@media only screen and (min-device-width: 700px) {
+    header {
+        background: url(../../assets/img/head.png) center center no-repeat;
+    }
 }
 
 .top-nav-collapse {
