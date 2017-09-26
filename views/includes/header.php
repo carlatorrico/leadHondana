@@ -33,6 +33,8 @@ if ( ! defined('ABSPATH')) exit; ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
+    <meta name="description" content="RH do Futuro">
+    <meta name="keywords" content="RH do Futuro, liderenca, treinamento, recursos humanos, edeucacao, gestao, disruptivo">
 
     <link href="<?php echo HOME_URI;?>/bower_components/MDBootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo HOME_URI;?>/bower_components/MDBootstrap/css/mdb.min.css" rel="stylesheet">
