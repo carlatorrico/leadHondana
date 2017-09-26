@@ -116,12 +116,12 @@ class LeadModel
         else if(getenv("REMOTE_ADDR")) $ip = getenv("REMOTE_ADDR");
         else $ip = "UNKNOWN";
 
-        if(strlen($ip) > 15){
-            $ipv4 = hexdec(substr($ip, 0, 2)). "." . hexdec(substr($ip, 2, 2)). "." . hexdec(substr($ip, 5, 2)). "." . hexdec(substr($ip, 7, 2));
-
-        } else {
-            $ipv4 = $ip;
-        }
+//        if(strlen($ip) > 15){
+//            $ipv4 = hexdec(substr($ip, 0, 2)). "." . hexdec(substr($ip, 2, 2)). "." . hexdec(substr($ip, 5, 2)). "." . hexdec(substr($ip, 7, 2));
+//
+//        } else {
+//        }
+        $ipv4 = $ip;
         return $ipv4;
     }
 }
