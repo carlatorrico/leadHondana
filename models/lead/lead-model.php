@@ -85,7 +85,7 @@ class LeadModel
             if (empty($email)) {
 
                 $ip = $this->getIP();
-                $ipv6 = $this->ipv6to4($ip);
+//                $ipv6 = $this->ipv6to4($ip);
 
                 $query = $this->db->save('lead', array(
                     'nome'           => chk_array($this->form_data, 'name'),
