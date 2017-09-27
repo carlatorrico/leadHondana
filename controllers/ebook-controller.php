@@ -37,7 +37,7 @@ class EbookController extends MainController
 
         header("Content-Type: application/octet-stream");
 
-        $file = "bmc.pdf";
+        $file = "seumanual.pdf";
         header("Content-Disposition: attachment; filename=" . urlencode($file));
         header("Content-Type: application/octet-stream");
         header("Content-Type: application/download");
