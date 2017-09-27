@@ -82,14 +82,17 @@ class LeadModel
             $mail = $this->db->findByEmail('lead', $this->form_data);
             $email = $mail->fetchAll();
 
-            if(empty($email)) {
-                // Executa a consulta
+            if (empty($email)) {
+
                 $ip = $this->getIP();
+                $ipv6 = $this->ipv6to4($ip);
+
                 $query = $this->db->save('lead', array(
-                    'nome'      => chk_array($this->form_data, 'name'),
-                    'sobrenome' => chk_array($this->form_data, 'sobrenome'),
-                    'email'     => chk_array($this->form_data, 'email'),
-                    'ipv4'      => $ip
+                    'nome'           => chk_array($this->form_data, 'name'),
+                    'sobrenome'      => chk_array($this->form_data, 'sobrenome'),
+                    'email'          => chk_array($this->form_data, 'email'),
+                    'ipv4'           => $ip,
+//                    'ipv6_converted' => (!empty($ipv6)) ? $ipv6 : '',
                 ));
 
                 // Verifica se a consulta está OK e configura a mensagem
@@ -100,9 +103,8 @@ class LeadModel
                     $this->form_msg = '<p class="form_success">Sucesso, lead registrado.</p>';
                     return;
                 }
-            } else{
+            } else {
                 echo "ja existe";
-                die();
             }
 
         } else {
@@ -110,18 +112,40 @@ class LeadModel
         }
     }
 
-    public function getIP() {
-        if(getenv("HTTP_X_FORWARDED_FOR")) $ip = getenv("HTTP_X_FORWARDED_FOR");
-        else if (getenv("HTTP_CLIENT_IP")) $ip = getenv("HTTP_CLIENT_IP");
-        else if(getenv("REMOTE_ADDR")) $ip = getenv("REMOTE_ADDR");
-        else $ip = "UNKNOWN";
+    public function getIP()
+    {
+        if (getenv("HTTP_X_FORWARDED_FOR")) {
+            $ip = getenv("HTTP_X_FORWARDED_FOR");
+        } else {
+            if (getenv("HTTP_CLIENT_IP")) {
+                $ip = getenv("HTTP_CLIENT_IP");
+            } else {
+                if (getenv("REMOTE_ADDR")) {
+                    $ip = getenv("REMOTE_ADDR");
+                } else {
+                    $ip = "UNKNOWN";
+                }
+            }
+        }
 
-//        if(strlen($ip) > 15){
-//            $ipv4 = hexdec(substr($ip, 0, 2)). "." . hexdec(substr($ip, 2, 2)). "." . hexdec(substr($ip, 5, 2)). "." . hexdec(substr($ip, 7, 2));
-//
-//        } else {
-//        }
-        $ipv4 = $ip;
+        if (strlen($ip) > 15) {
+            $ip = hexdec(substr($ip, 0, 2)) . "." . hexdec(substr($ip, 2, 2)) . "." . hexdec(substr($ip, 5, 2)) . "."
+                . hexdec(substr($ip, 7, 2));
+        } else {
+            $ip = $ip;
+        }
+
+        return $ip;
+    }
+
+    public function ipv6to4($ip)
+    {
+        if (strlen($ip) > 15) {
+            $ipv4 = hexdec(substr($ip, 0, 2)) . "." . hexdec(substr($ip, 2, 2)) . "." . hexdec(substr($ip, 5, 2)) . "."
+                . hexdec(substr($ip, 7, 2));
+        } else {
+            $ipv4 = $ip;
+        }
         return $ipv4;
     }
 }
