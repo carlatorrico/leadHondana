@@ -33,8 +33,31 @@ if ( ! defined('ABSPATH')) exit; ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="RH do Futuro">
-    <meta name="keywords" content="RH do Futuro, liderenca, treinamento, recursos humanos, edeucacao, gestao, disruptivo">
+
+    <meta name="title" content="RH do futuro - RH Blog"/>
+    <meta name="description" content="A única constante é a mudança. O RH do Futuro traz as principais novidades na gestão de recursos humanos. Se inscreva no nosso blog e faça parte da maior comunidade de inovação e desenvolvimento de pessoas do Brasil.">
+    <meta name="keywords" content="RH do Futuro, liderença, recursos humanos, educação, gestão, gestão de conhecimento, aprendizados, inovação, disruptivo, turnover, erro na contratação, rotatividade, recrutamento e seleção, gestão empresarial, gestão de pessoas, treinamento">
+    <meta name="copyright" content="rhdofuturo.blog.br">
+    <meta name="author" content="Equipe 8 - Gama Experience">
+    <meta name="publisher" content="publisher is rhdofuturo.blog.br">
+    <meta name="robots" content="index, follow">
+    <meta name="classification" content="Recursos Humanos">
+
+    <meta name="DC.title" content="RH do futuro - RH Blog">
+    <meta name="DC.creator " content="Equipe 8 - Gama Experience">
+    <meta name="DC.creator.address" content="contato@rhdofuturo.blog.br">
+    <meta name="DC.publisher" content="rhdofuturo.blog.br">
+    <meta name="DC.subject" content="RH do futuro">
+    <meta name="DC.description" content="A única constante é a mudança. O RH do Futuro traz as principais novidades na gestão de recursos humanos. Se inscreva no nosso blog e faça parte da maior comunidade de inovação e desenvolvimento de pessoas do Brasil.">
+
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="RH do futuro - RH Blog"/>
+    <meta property="og:site_name" content="RH do futuro - RH Blog"/>
+    <meta property="og:description" content="A única constante é a mudança. O RH do Futuro traz as principais novidades na gestão de recursos humanos. Se inscreva no nosso blog e faça parte da maior comunidade de inovação e desenvolvimento de pessoas do Brasil."/>
+    <meta property="og:url" content="http://www.rhdofuturo.blog.br"/>
+    <link rel="canonical" href="http://www.rhdofuturo.blog.br"/>
+    <base href="http://www.rhdofuturo.blog.br"/>
 
     <link href="<?php echo HOME_URI;?>/bower_components/MDBootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo HOME_URI;?>/bower_components/MDBootstrap/css/mdb.min.css" rel="stylesheet">
