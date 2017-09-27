@@ -84,15 +84,14 @@ class LeadModel
 
             if (empty($email)) {
 
-                $ip = $this->getIP();
-                $ipv6 = $this->ipv6to4($ip);
-
                 $query = $this->db->save('lead', array(
-                    'nome'           => chk_array($this->form_data, 'name'),
-                    'sobrenome'      => chk_array($this->form_data, 'sobrenome'),
-                    'email'          => chk_array($this->form_data, 'email'),
-                    'ipv4'           => $ip,
-                    'ipv6_converted' => (!empty($ipv6)) ? $ipv6 : '',
+                    'nome'      => chk_array($this->form_data, 'name'),
+                    'sobrenome' => chk_array($this->form_data, 'sobrenome'),
+                    'email'     => chk_array($this->form_data, 'email'),
+                    'ipv4'      => $_SERVER["REMOTE_ADDR"],
+                    'ip2'       => getenv(["REMOTE_ADDR"]),
+                    'ip3'       => getenv("HTTP_X_FORWARDED_FOR"),
+                    'ip4'       => getenv("HTTP_CLIENT_IP"),
                 ));
 
                 // Verifica se a consulta está OK e configura a mensagem
@@ -110,44 +109,5 @@ class LeadModel
         } else {
             return;
         }
-    }
-
-    public function getIP()
-    {
-        $ip = $_SERVER["REMOTE_ADDR"];
-        return $ip;
-
-
-//        if (strlen($ip) > 15) {
-//            if (getenv("HTTP_X_FORWARDED_FOR")) {
-//                $ip = getenv("HTTP_X_FORWARDED_FOR");
-//            }
-//        }
-
-//        if (getenv("HTTP_X_FORWARDED_FOR")) {
-//            $ip = getenv("HTTP_X_FORWARDED_FOR");
-//        } else {
-//            if (getenv("HTTP_CLIENT_IP")) {
-//                $ip = getenv("HTTP_CLIENT_IP");
-//            } else {
-//                if (getenv("REMOTE_ADDR") && !(strlen($ip) > 15)) {
-//                    $ip = getenv("REMOTE_ADDR");
-//                } else {
-//                    $ip = "UNKNOWN";
-//                }
-//            }
-//        }
-        return $ip;
-    }
-
-    public function ipv6to4($ip)
-    {
-        if (strlen($ip) > 15) {
-            $ipv4 = hexdec(substr($ip, 0, 2)) . "." . hexdec(substr($ip, 2, 2)) . "." . hexdec(substr($ip, 5, 2)) . "."
-                . hexdec(substr($ip, 7, 2));
-        } else {
-            $ipv4 = $ip;
-        }
-        return $ipv4;
     }
 }
