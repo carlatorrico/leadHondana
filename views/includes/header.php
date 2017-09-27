@@ -64,6 +64,7 @@ if ( ! defined('ABSPATH')) exit; ?>
     <link href="<?php echo HOME_URI;?>/assets/css/main.css" rel="stylesheet">
 
     <title><?php echo $this->title; ?></title>
+    <meta name="google-site-verification" content="3mBkwVf4bUhKw8QgxmuV-sKuc3wdsYNCtD_Qw536ZGQ" />
 </head>
 
 <body>
