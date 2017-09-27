@@ -18,7 +18,7 @@ $blogs = $modelo->get_blog_list();
         <div class="row mt-5">
             <div class="col-lg-7 mb-4">
                 <div class="view overlay hm-white-slight z-depth-1-half mb-3">
-                    <img src="<?php echo HOME_URI; ?>/assets/img/capa_ebook.png" class="img-fluid">
+                    <img src="<?php echo HOME_URI; ?>/assets/img/capa_ebook.jpeg" class="img-fluid">
                 </div>
                 <h1 class="mb-3 cyan-text"><strong>Quero baixar o e-book</strong></h1>
 
