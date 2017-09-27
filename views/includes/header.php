@@ -20,6 +20,14 @@ if ( ! defined('ABSPATH')) exit; ?>
 <!--<![endif]-->
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-P74X72P');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106970041-1"></script>
     <script>
@@ -34,14 +42,46 @@ if ( ! defined('ABSPATH')) exit; ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
 
+    <meta name="title" content="RH do futuro - RH Blog"/>
+    <meta name="description" content="A única constante é a mudança. O RH do Futuro traz as principais novidades na gestão de recursos humanos. Se inscreva no nosso blog e faça parte da maior comunidade de inovação e desenvolvimento de pessoas do Brasil.">
+    <meta name="keywords" content="RH do Futuro, liderença, recursos humanos, educação, gestão, gestão de conhecimento, aprendizados, inovação, disruptivo, turnover, erro na contratação, rotatividade, recrutamento e seleção, gestão empresarial, gestão de pessoas, treinamento">
+    <meta name="copyright" content="rhdofuturo.blog.br">
+    <meta name="author" content="Equipe 8 - Gama Experience">
+    <meta name="publisher" content="publisher is rhdofuturo.blog.br">
+    <meta name="robots" content="index, follow">
+    <meta name="classification" content="Recursos Humanos">
+
+    <meta name="DC.title" content="RH do futuro - RH Blog">
+    <meta name="DC.creator " content="Equipe 8 - Gama Experience">
+    <meta name="DC.creator.address" content="contato@rhdofuturo.blog.br">
+    <meta name="DC.publisher" content="rhdofuturo.blog.br">
+    <meta name="DC.subject" content="RH do futuro">
+    <meta name="DC.description" content="A única constante é a mudança. O RH do Futuro traz as principais novidades na gestão de recursos humanos. Se inscreva no nosso blog e faça parte da maior comunidade de inovação e desenvolvimento de pessoas do Brasil.">
+
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="RH do futuro - RH Blog"/>
+    <meta property="og:site_name" content="RH do futuro - RH Blog"/>
+    <meta property="og:description" content="A única constante é a mudança. O RH do Futuro traz as principais novidades na gestão de recursos humanos. Se inscreva no nosso blog e faça parte da maior comunidade de inovação e desenvolvimento de pessoas do Brasil."/>
+    <meta property="og:url" content="http://www.rhdofuturo.blog.br"/>
+    <link rel="canonical" href="http://www.rhdofuturo.blog.br"/>
+    <base href="http://www.rhdofuturo.blog.br"/>
+
     <link href="<?php echo HOME_URI;?>/bower_components/MDBootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo HOME_URI;?>/bower_components/MDBootstrap/css/mdb.min.css" rel="stylesheet">
     <link href="<?php echo HOME_URI;?>/assets/css/main.css" rel="stylesheet">
 
     <title><?php echo $this->title; ?></title>
+    <meta name="google-site-verification" content="3mBkwVf4bUhKw8QgxmuV-sKuc3wdsYNCtD_Qw536ZGQ" />
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P74X72P" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -77,7 +117,7 @@ if ( ! defined('ABSPATH')) exit; ?>
                         </div>
                     </div>
 
-                    <div class="col-md-5 col-xl-5 offset-xl-1">
+                    <div class="col-md-5 col-xl-5 offset-xl-1 mb-2">
                         <div class="card grey lighten-4 wow fadeInRight" data-wow-delay="0.3s">
 
                             <div class="card-body z-depth-2">

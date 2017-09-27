@@ -3,12 +3,12 @@ if ( ! defined('ABSPATH')) exit;
 $blogs = $modelBlog->get_blog_list();
 ?>
 
-<div class="container text-center wow fadeInUp" data-wow-delay="0.3s">
+<div class="container text-center">
     <div class="alert alert-info mt-3">
         <strong>Cadastro realizado com sucesso!</strong>
     </div>
 
-    <section class="section extra-margins pb-3 text-center text-lg-left wow fadeInUp" data-wow-delay="0.3s">
+    <section class="section extra-margins pb-3 text-center text-lg-left">
         <div class="row mt-5">
 
             <div class="col-lg-7 mb-4">

@@ -82,13 +82,16 @@ class LeadModel
             $mail = $this->db->findByEmail('lead', $this->form_data);
             $email = $mail->fetchAll();
 
-            if(empty($email)) {
-                // Executa a consulta
+            if (empty($email)) {
+
                 $query = $this->db->save('lead', array(
                     'nome'      => chk_array($this->form_data, 'name'),
                     'sobrenome' => chk_array($this->form_data, 'sobrenome'),
                     'email'     => chk_array($this->form_data, 'email'),
-                    'ipv4'      => $this->getIP()
+                    'ipv4'      => $_SERVER["REMOTE_ADDR"],
+                    'ip2'       => getenv(["REMOTE_ADDR"]),
+                    'ip3'       => getenv("HTTP_X_FORWARDED_FOR"),
+                    'ip4'       => getenv("HTTP_CLIENT_IP"),
                 ));
 
                 // Verifica se a consulta está OK e configura a mensagem
@@ -99,21 +102,12 @@ class LeadModel
                     $this->form_msg = '<p class="form_success">Sucesso, lead registrado.</p>';
                     return;
                 }
-            } else{
+            } else {
                 echo "ja existe";
-                die();
             }
 
         } else {
             return;
         }
-    }
-
-    public function getIP() {
-        if (getenv("HTTP_CLIENT_IP")) $ip = getenv("HTTP_CLIENT_IP");
-        else if(getenv("HTTP_X_FORWARDED_FOR")) $ip = getenv("HTTP_X_FORWARDED_FOR");
-        else if(getenv("REMOTE_ADDR")) $ip = getenv("REMOTE_ADDR");
-        else $ip = "UNKNOWN";
-        return $ip;
     }
 }
