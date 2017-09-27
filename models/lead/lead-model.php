@@ -85,14 +85,14 @@ class LeadModel
             if (empty($email)) {
 
                 $ip = $this->getIP();
-//                $ipv6 = $this->ipv6to4($ip);
+                $ipv6 = $this->ipv6to4($ip);
 
                 $query = $this->db->save('lead', array(
                     'nome'           => chk_array($this->form_data, 'name'),
                     'sobrenome'      => chk_array($this->form_data, 'sobrenome'),
                     'email'          => chk_array($this->form_data, 'email'),
                     'ipv4'           => $ip,
-//                    'ipv6_converted' => (!empty($ipv6)) ? $ipv6 : '',
+                    'ipv6_converted' => (!empty($ipv6)) ? $ipv6 : '',
                 ));
 
                 // Verifica se a consulta está OK e configura a mensagem
@@ -127,14 +127,6 @@ class LeadModel
                 }
             }
         }
-
-        if (strlen($ip) > 15) {
-            $ip = hexdec(substr($ip, 0, 2)) . "." . hexdec(substr($ip, 2, 2)) . "." . hexdec(substr($ip, 5, 2)) . "."
-                . hexdec(substr($ip, 7, 2));
-        } else {
-            $ip = $ip;
-        }
-
         return $ip;
     }
 
