@@ -48,6 +48,13 @@ $blogs = $modelo->get_blog_list();
                                 </div>
                             </form>
                         </div>
+                        <div class="col-12 mt-4 mb-4 wow fadeInUp" data-wow-delay="0.3s">
+                            <h4 class="text-left">Disponibilizamos um e-book com conteúdo exclusivo para você
+                                <a href="<?php echo HOME_URI;?>/ebook">
+                                    <button type="button" class="btn btn-outline-brown waves-effect">Eu quero!</button>
+                                </a>
+                            </h4>
+                        </div>
                     </div>
                 <?php endforeach; ?>
 
