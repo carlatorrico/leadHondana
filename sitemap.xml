@@ -12,6 +12,16 @@
   <priority>1.00</priority>
 </url>
 <url>
+  <loc>http://www.rhdofuturo.blog.br/ebook</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.rhdofuturo.blog.br/blog/detail/problemas-com-interrupcao-de-cursos-online</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>http://www.rhdofuturo.blog.br/blog/detail/gestao-de-recursos-humanos-vendas</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
@@ -38,6 +48,11 @@
 </url>
 <url>
   <loc>http://www.rhdofuturo.blog.br/blog/detail/treinamento-no-palma-da-mao</loc>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://www.rhdofuturo.blog.br/blog/detail/gestao-do-conhecimento-rh-futuro</loc>
   <changefreq>daily</changefreq>
   <priority>0.80</priority>
 </url>
