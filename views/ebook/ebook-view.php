@@ -20,7 +20,8 @@ $blogs = $modelo->get_blog_list();
                 <div class="view overlay hm-white-slight z-depth-1-half mb-3">
                     <img src="<?php echo HOME_URI; ?>/assets/img/capa_ebook.jpeg" class="img-fluid">
                 </div>
-                <h1 class="mb-3 cyan-text"><strong>Quero baixar o e-book</strong></h1>
+                <h1 class="mb-3 cyan-text"><strong>Quero baixar o e-book e receber o Coaching!</strong></h1>
+                <p><h4 class="text-left">Enviaremos as informações do Coaching no seu e-mail</h4></p>
 
                 <form action="<?php echo HOME_URI;?>/ebook/download" method="POST">
                     <div class="md-form">
