@@ -50,6 +50,7 @@ if ( ! defined('ABSPATH')) exit; ?>
     <meta name="publisher" content="publisher is rhdofuturo.blog.br">
     <meta name="robots" content="index, follow">
     <meta name="classification" content="Recursos Humanos">
+    <link rel="shortcut icon" href="<?php echo HOME_URI;?>/assets/img/rhf.ico" />
 
     <meta name="DC.title" content="RH do futuro - RH Blog">
     <meta name="DC.creator " content="Equipe 8 - Gama Experience">
