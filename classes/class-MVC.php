@@ -69,7 +69,10 @@ class MVC
 
         // Se o arquivo do controlador não existir, não faremos nada
         if ( ! file_exists( ABSPATH . '/controllers/' . $this->controlador . '.php' ) ) {
+            // Página não encontrada
             require_once ABSPATH . $this->not_found;
+
+            // FIM :)
             return;
         }
 
