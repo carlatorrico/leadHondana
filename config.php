@@ -10,7 +10,7 @@
 define( 'ABSPATH', dirname( __FILE__ ) );
 
 // URL da home
-define( 'HOME_URI', 'http://localhost/leadHondana' );
+define( 'HOME_URI', '/leadHondana' );
 
 // Nome do host da base de dados
 define( 'HOSTNAME', 'localhost' );
